@@ -1,0 +1,91 @@
+<!-- Edit 2023-11-13 -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>jQuery - Vue.js</title>
+  </head>
+  <body>
+    <!-- JQuery ici  -->
+    <h1>jQuery</h1>
+    <div>
+      <p>Length: <span id="length">0</span></p>
+      <ul id="list"></ul>
+      <button id="add">add</button>
+    </div>
+
+    <!-- Vue ici  -->
+
+    <h1>Vue.js</h1>
+    <div id="app">
+      <p>Length: {{ length }}</p>
+      <ul>
+        <li v-for="fruit in fruits" :key="fruit">
+          <span>{{ fruit }}</span>
+          <button @click="fruits.splice(i, 1)">remove</button>
+        </li>
+      </ul>
+      <button @click="ajoutItem">add</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <script>
+      // Partie jQuery
+      (function () {
+        var counter = 0;
+        var list = ["Apple", "Banana", "Strawberry"];
+
+        init();
+
+        $(document).on("click", "#add", function () {
+          addItem("Orange" + (++counter).toString());
+        });
+        $(document).on("click", ".remove", function (event) {
+          $(event.target).parent().remove();
+          updateLength();
+        });
+
+        function init() {
+          for (var i = 0; i < list.length; i++) {
+            addItem(list[i]);
+          }
+        }
+
+        function addItem(name) {
+          $("#list").append(
+            "<li>" + name + '<button class="remove">remove</button></li>',
+          );
+          updateLength();
+        }
+
+        function updateLength() {
+          $("#length").text($("#list li").length);
+        }
+      })();
+
+      // Partie Vue
+      Vue.createApp({
+        data() {
+          return {
+            counter: 0,
+            fruits: ["Apple", "Banana", "Strawberry"],
+          };
+        },
+        computed: {
+          length: function () {
+            return this.fruits.length;
+          },
+        },
+        methods: {
+          ajoutItem: function () {
+            this.fruits.push("Orange" + (++this.counter).toString());
+          },
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>
