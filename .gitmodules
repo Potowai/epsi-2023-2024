@@ -1,2 +1,7 @@
 [submodule "vue_js/epsi-app-linkedin"]
 	url = https://github.com/Potowai/epsi-app-vue-simple.git
+[submodule "python"]
+	path = python
+	url = https://github.com/Potowai/epsi-python
+[submodule "test_unitaires/demo_test_unitaire"]
+	url = https://github.com/Potowai/demo_test_unitaire.git
