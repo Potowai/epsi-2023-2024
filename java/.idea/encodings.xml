@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/demo-java/demo-jdbc-mvn/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-java/demo-jdbc-mvn/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-java/demo-jdbc-with-mvn/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-java/demo-jdbc-with-mvn/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-java/demo-jdbc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-java/demo-jdbc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-java/demo-to-string-method/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-java/demo-to-string-method/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-java/demo_jpa/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-java/demo_jpa/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

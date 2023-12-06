@@ -1,5 +1,7 @@
 package fr.epsi.b32324c2;
 
+import fr.epsi.b32324c2.metier.Livre;
+
 import javax.persistence.*;
 
 public class TestJpa {
@@ -15,11 +17,22 @@ public class TestJpa {
             // Create EntityManager
             entityManager = emf.createEntityManager();
 
-            System.out.println(entityManager.isOpen()); // Connect to the database
-
+            System.out.println("EntityManager isOpen() : " + entityManager.isOpen()); // Connect to the database
+            String msg = "";
             // Perform database operations within a transaction if needed
             // Example: entityManager.getTransaction().begin();
             // ...
+            entityManager.getTransaction().begin();
+            Livre livre = new Livre(99, "Livre 99", "Alexis");
+            if (entityManager.find(Livre.class, 99) != null) {
+                msg = "Le livre existe déjà :/";
+            } else {
+                entityManager.persist(livre);
+                msg = "Livre ajouté";
+            }
+            entityManager.getTransaction().commit();
+            System.out.println(msg);
+
 
             // Commit the transaction if started
             // Example: entityManager.getTransaction().commit();

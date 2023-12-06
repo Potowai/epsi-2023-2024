@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demo-jdbc-mvn" />
+        <module name="demo-jdbc-with-mvn" />
+        <module name="demo_jpa" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo-jdbc-with-mvn (1) (org.example)" target="21" />
+      <module name="demo-jdbc-with-mvn (2) (fr.epsi.b32324c2)" target="17" />
+      <module name="demo-to-string-method" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
