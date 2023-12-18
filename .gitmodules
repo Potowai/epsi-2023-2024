@@ -3,3 +3,5 @@
 	url = https://github.com/Potowai/epsi-python
 [submodule "test_unitaires/demo_test_unitaire"]
 	url = https://github.com/Potowai/demo_test_unitaire.git
+[submodule "java/tp_jpql"]
+	url = https://github.com/Potowai/tp_jpql/
