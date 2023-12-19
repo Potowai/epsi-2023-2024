@@ -3,5 +3,10 @@
 	url = https://github.com/Potowai/epsi-python
 [submodule "test_unitaires/demo_test_unitaire"]
 	url = https://github.com/Potowai/demo_test_unitaire.git
+[submodule "vue_js/epsi_app_vue_simple"]
+	url = https://github.com/Potowai/epsi_app_vue_simple
+[submodule "MSPR"]
+	url = https://github.com/EstebanBouts/MSPR
+
 [submodule "java/tp_jpql"]
 	url = https://github.com/Potowai/tp_jpql/
